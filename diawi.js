@@ -35,7 +35,7 @@ var Diawi = function(opts) {
   };
 
   // Append the optional parameters to the formData
-  [ "password", "comment" ].forEach((key) => {
+  [ "password", "comment", "find_by_udid" ].forEach((key) => {
     if (opts[key]) {
       formData[key] = opts[key];
     }
