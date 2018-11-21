@@ -21,7 +21,13 @@ var argv = require('yargs')
         alias: 'c',
         describe: 'additional information to your users on this build: the comment will be displayed on the installation page',
         type: 'string'
-      })
+      }).
+      option('find_by_udid', {
+        alias: 'w',
+        describe: 'allow users to find this build by udid (iOS only),
+        default: 0,
+        type: 'number'
+      });
   })
   .demandCommand()
   .help()
