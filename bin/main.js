@@ -41,7 +41,7 @@ var command = argv._[0] || "upload";
 switch (command) {
 
   case 'upload':
-    new Diawi({ token: argv.token, path: argv.ipa, password: argv.password, comment: argv.comment })
+    new Diawi({ token: argv.token, path: argv.ipa, password: argv.password, comment: argv.comment, find_by_udid: argv.find_by_udid })
       .on("complete", function(url) {
         console.log(url);
       })
