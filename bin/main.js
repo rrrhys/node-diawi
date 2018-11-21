@@ -23,7 +23,7 @@ var argv = require('yargs')
         type: 'string'
       }).
       option('find_by_udid', {
-        alias: 'w',
+        alias: 'f',
         describe: 'allow users to find this build by udid (iOS only)',
         default: 0,
         type: 'number'
